@@ -1,0 +1,277 @@
+.header {
+    background: #222;
+
+    & svg {
+        fill: #E8E8E8;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &:active {
+            fill: #F16D7F;
+        }
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &-container {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(tablet) {
+            padding: 0 32px;
+        }
+
+        @include media(mobile) {
+            padding: 0 16px;
+        }
+    }
+
+    &-col {
+        display: flex;
+        align-items: center;
+
+        &-left>div {
+            margin-right: 41px;
+        }
+
+        &-right>div {
+            margin-left: 33px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+
+
+/* Search */
+.search-form {
+    position: relative;
+    height: 28px;
+    overflow: hidden;
+    width: 150px;
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.search-input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    padding: 5px 10px;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-151px);
+    transition: transform .3s;
+    top: 0;
+
+    &::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    &:focus {
+        transform: translateX(0);
+
+        &+label {
+            display: none;
+        }
+    }
+}
+
+
+/* Navigation */
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav {
+    min-height: 764px;
+    padding: 37px 34px 37px;
+    box-sizing: border-box;
+    background-color: $main-bg;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 232px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+
+    @include media(tablet) {
+        z-index: 3;
+        min-height: auto;
+    }
+
+    &-hidden {
+        display: none;
+    }
+
+    &-menu input {
+        display: none;
+    }
+
+    span {
+        display: block;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    a:hover {
+        opacity: .8;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    &-lvl-1 {
+        padding-top: 24px;
+
+        &>li>a {
+            color: $secondary-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &-lvl-2 {
+        margin: 7px 0 15px;
+
+        &>li {
+            padding: 5px 0;
+        }
+
+        &>li>a {
+            color: #6F6E6E;
+            padding-left: 22px;
+        }
+    }
+}
+
+.fa-solid {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.account {
+    @include media(mobile) {
+        display: none;
+    }
+}
+
+.cart-icon {
+    position: relative;
+    padding-right: 10px;
+
+    @include media(mobile) {
+        display: none;
+    }
+}
+
+.cart-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    background-color: $secondary-color;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    cursor: pointer;
+
+    &:empty {
+        display: none;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &:active {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.rightHeader {
+    position: relative;
+}
+
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+
+    img {
+        height: 100px;
+    }
+}
+
+.basket-item {
+    display: flex;
+
+}
+
+@media (min-width: 340px) {
+    .basket {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 552px) {
+    .basket {
+        width: 500px;
+    }
+}
+
+.basketRow {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    p {
+        margin: 10px;
+    }
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}

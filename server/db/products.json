@@ -1,0 +1,45 @@
+[
+    {
+        "imgProduct": "img/product-1.jpg",
+        "imgCart": "img/product-cart-1",
+        "id_product": "1",
+        "product_name": "Куртка",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 1600
+    },
+    {
+        "imgProduct": "img/product-2.jpg",
+        "id_product": "2",
+        "product_name": "Костюм",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 3000
+    },
+    {
+        "imgProduct": "img/product-3.jpg",
+        "id_product": "3",
+        "product_name": "Шорты",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 600
+    },
+    {
+        "imgProduct": "img/product-4.jpg",
+        "id_product": "4",
+        "product_name": "Футболка",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 1000
+    },
+    {
+        "imgProduct": "img/product-5.jpg",
+        "id_product": "5",
+        "product_name": "Пиджак",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 1200
+    },
+    {
+        "imgProduct": "img/product-6.jpg",
+        "id_product": "6",
+        "product_name": "Рубашка",
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 1000
+    }
+]
